@@ -1,7 +1,6 @@
 ---
 - name: Update n1 severs
   hosts: n1
-
  
   tasks:
     - name: Create directory
@@ -17,7 +16,6 @@
 - name: Update n2 servers
   hosts: n2
  
- 
   tasks:
     - name: Create directory
       file:
@@ -32,12 +30,11 @@
 - name: Update group1 servers
   hosts: g1
  
- 
   tasks:
     - name: Create directory
       file:
         path: /home/ec2-user/new_dir_group1
-        state: direct
+        state: directory
 
     - name: Create directory
       file:
