@@ -1,0 +1,15 @@
+---
+- name: crete file text.txt 
+  hosts: all
+  become: yes
+  tasks:
+    - name: create /opt/devops 
+      file:
+        path: /opt/devops
+        state: directory
+
+    - name: Create text.txt with content "hello"
+      copy:
+        dest: /opt/devops/text.txt
+        content: "hello"
+...
