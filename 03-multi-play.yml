@@ -37,7 +37,7 @@
     - name: Create directory
       file:
         path: /home/ec2-user/new_dir_group1
-        state: direct
+        state: directory
 
     - name: Create directory
       file:
