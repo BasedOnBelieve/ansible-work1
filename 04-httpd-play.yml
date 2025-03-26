@@ -1,15 +1,22 @@
 ---
-- name: crete file text.txt 
-  hosts: all
+- name: install httpd server
+  hosts: n2
   become: yes
-  tasks:
-    - name: create /opt/devops 
-      file:
-        path: /opt/devops
-        state: directory
 
-    - name: Create text.txt with content "hello"
-      copy:
-        dest: /opt/devops/text.txt
-        content: "hello"
+  tasks:
+    - name: install httpd
+      yum:
+        name: httpd
+        state: present
+
+    - name: start httpd
+      service:
+        name: httpd
+        state: started
+
+    - name: enable httpd
+      service:
+        name: httpd
+        enabled: yes
+        
 ...
