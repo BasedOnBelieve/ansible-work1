@@ -7,6 +7,6 @@
     - name: Update maintenance
       copy:
         src: variablefile.html
-        dest: /var/www/html/index.html/variablefile.html
+        dest: /var/www/html/variablefile.html
 
 ...
