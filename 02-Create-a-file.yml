@@ -1,5 +1,5 @@
 ---
-- name: crete file text.txt 
+- name: create file text.txt 
   hosts: all
   become: yes
   tasks:
