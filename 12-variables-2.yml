@@ -8,7 +8,7 @@
   tasks:
     - name: Update maintenance
       template:
-        src: variablefile.j2
+        src: variable.html
         dest: /var/www/html/vari.html
 
 ...
