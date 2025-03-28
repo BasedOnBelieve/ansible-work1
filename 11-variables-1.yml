@@ -5,7 +5,7 @@
 
   tasks:
     - name: Update maintenance
-      copy:
+      template:
         src: variable.j2
         dest: /var/www/html/vari.html
 
