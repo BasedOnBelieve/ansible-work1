@@ -6,7 +6,7 @@
   tasks:
     - name: Update maintenance
       copy:
-        src: variablefile.html
-        dest: /var/www/html/variablefile.html
+        src: variable.j2
+        dest: /var/www/html/vari.html
 
 ...
