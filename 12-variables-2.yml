@@ -1,0 +1,14 @@
+---
+- name: Variable Demo
+  hosts: n2
+  become: yes
+  vars:
+  myusername: BoB
+
+  tasks:
+    - name: Update maintenance
+      template:
+        src: variablefile.j2
+        dest: /var/www/html/vari.html
+
+...
