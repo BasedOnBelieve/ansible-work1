@@ -3,7 +3,7 @@
   hosts: n2
   become: yes
   vars:
-  myusername: BoB
+    myusername: BoB
 
   tasks:
     - name: Update maintenance
